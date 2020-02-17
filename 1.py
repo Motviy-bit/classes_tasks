@@ -1,5 +1,11 @@
-x = input('Введите первое число:')
-y = input('Введите второе число:')
-z = input('Введите третье число:')
-list_1 = (x, y, z)
-print(f'Наибольшее число среди указанных: {max(list_1)}')
+x = input('Введите сумму чисел:').split('+')
+y = int(x[0]) + int(x[1]) + int(x[2])
+print(y)
+print(x)
+y = 0
+index = 0
+for i in x:
+    y += int(x[index])
+    index += 1
+print(y)
+
